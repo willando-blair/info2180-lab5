@@ -13,24 +13,24 @@ document.addEventListener('DOMContentLoaded', function()
         const xhr = new XMLHttpRequest();
 
         if (clickedBtn.id == "countryLookup"){
-                const input = srchField.value;
+            const input = srchField.value;
             
-                var url = "world.php?country="+ encodeURIComponent(input) + "&city=false";
+            var url = "world.php?country="+ encodeURIComponent(input) + "&city=false";
             
-                xhr.open('GET', url, true);
+            xhr.open('GET', url, true);
            
-                xhr.onload = function(){
-                    if (this.status == 200){
-                        result.innerHTML = this.responseText;
-                        console.log(result.innerHTML);
-                    }
+            xhr.onload = function(){
+                if (this.status == 200){
+                    result.innerHTML = this.responseText;
+                    console.log(result.innerHTML);
                 }
+            }
 
-                xhr.onerror = function(){
-                    console.log("Request Error!");
-                }
+            xhr.onerror = function(){
+                console.log("Request Error!");
+            }
             
-                xhr.send();
+            xhr.send();
 
         console.log("a country yah look");
 
@@ -58,10 +58,6 @@ document.addEventListener('DOMContentLoaded', function()
         
             xhr.send();
         }
-
-
     }
-
-
 
 })

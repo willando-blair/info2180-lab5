@@ -4,9 +4,6 @@ $username = 'lab5_user';
 $password = 'password123';
 $dbname = 'world';
 
-$search = $_GET["country"];
-echo $search;
-
 $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
 $stmt = $conn->query("SELECT * FROM countries");
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
 		<title>World Database Lookup</title>
 
 		<!-- you can modify this as needed or to your preference -->
@@ -18,14 +18,12 @@
 		</header>
 
 		<main>
-			<form action="world.php" method="get">
-				<div id="controls">
-					<label for="country">Search</label><br>
-					<input id="country" type="search" name="country" placeholder="Enter country name"/><br>
-					<button id="countryLookup">Lookup Country</button>
-					<button id="cityLookup">Lookup Cities</button>
-				</div>
-			</form>
+			<div id="controls">
+				<label for="country">Search</label><br>
+				<input id="country" type="search" name="country" placeholder="Enter country name" autocomplete="country-name"/><br>
+				<button id="countryLookup">Lookup Country</button>
+				<button id="cityLookup">Lookup Cities</button>
+			</div>
 			
 			<div id="result">
 				<!-- countries will appear here -->
