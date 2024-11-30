@@ -21,18 +21,21 @@ label {
     color: white;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 36px;
     padding: 10px;
 }
 
 input {
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
     background-color: lightgray;
-    height: 32px;
-    width: 324px;
+    height: 48px;
+    width: 440px;
     border-radius: 50px;
     border: none;
-    padding-inline: 10px;
+    padding-inline: 20px;
+    margin: 24px;
 }
 
 input:hover {
@@ -41,16 +44,28 @@ input:hover {
 }
 
 button {
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
     color:white;
     background-color: darkslategray;
     height: 30px;
+    width: 120px;
     font-weight: bold;
+    margin: 5px;
 }
 
 button:hover {
     background-color: rgb(75, 113, 113);
     border: none;
     cursor: pointer;
+}
+
+img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+img:hover {
+    width:100px;
 }
