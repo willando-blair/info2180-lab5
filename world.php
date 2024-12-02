@@ -22,11 +22,7 @@
 
   $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-?>
-
-<?php 
-
-  if (6<10) {
+  if ($city == "false") {
     echo 
     "
       <table>
@@ -37,7 +33,7 @@
           <th>Head of State</th>
         </tr>
     ";
-    while ($r = $stmt->fetch(PDO::FETCH_ASSOC)) {
+    foreach ($results as $r) {
       echo 
       "
         <tr>
@@ -50,7 +46,7 @@
       ";
     }
   }
-  elseif (6>10) {
+  else if ($city == "false"){
     echo 
     "
       <table>
@@ -60,7 +56,7 @@
           <th>Population</th>
         </tr>
     ";
-    while ($r = $stmt->fetch(PDO::FETCH_ASSOC)) {
+    foreach ($results as $r) {
       echo "
         <tr>
           <td>" . $r['name'] . "</td>
